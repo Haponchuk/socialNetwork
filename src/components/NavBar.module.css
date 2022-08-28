@@ -1,0 +1,12 @@
+.navBar {
+    background-color: #fa4e4e;
+    grid-area: nav;
+    padding-left: 25%;
+    justify-items: center;
+}
+
+
+.item a{
+    color: white;
+    text-decoration: none;
+}
