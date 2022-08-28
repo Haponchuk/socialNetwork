@@ -6,7 +6,11 @@
 }
 
 
-.item a{
+.item a {
     color: white;
     text-decoration: none;
+}
+
+.item.settings a {
+    color: #000000;
 }
