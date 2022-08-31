@@ -1,9 +1,12 @@
-.item {
+.likes {
     color: #b04c8b;
 }
 
-.item img {
+.main img {
     width: 75px;
     height: 75px;
     border-radius: 15px;
+}
+.span {
+    color: black;
 }

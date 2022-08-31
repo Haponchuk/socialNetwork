@@ -1,9 +1,8 @@
-import s from "./Content.module.css";
+import s from "./Profile.module.css";
 import profileBackground from '../../images/kurapika123.png'
 import MyPosts from "./MyPosts/MyPosts";
-import Post from "./MyPosts/Post/Post";
 
-const Content = () => {
+const Profile = () => {
     return (
         <div className={s.content}>
             <div className="background-pic">
@@ -19,4 +18,4 @@ const Content = () => {
     );
 }
 
-export default Content;
+export default Profile;

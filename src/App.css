@@ -10,4 +10,8 @@
   "nav content ";
 }
 
+.app-wrapper-content {
+  background-color: #d1c7fa;
+  grid-area: content;
+}
 
