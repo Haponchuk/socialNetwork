@@ -1,25 +1,27 @@
 import s from "./NavBar.module.css";
+import {NavLink} from "react-router-dom";
 
 const NavBar = () => {
     return (
         <nav className={s.navBar}>
             <div className={s.item}>
-                <a href="/profile"> My Profile </a>
+                <NavLink to="/profile" className={navData => navData.isActive ? s.active : s.item}>
+                    My Profile </NavLink>
             </div>
             <div className={s.item}>
-                <a href="first-project/src/components/NavBar/NavBar#s"> Friends </a>
+                <NavLink to="/friends" className={navData => navData.isActive ? s.active : s.item}> Friends </NavLink>
             </div>
             <div className={s.item}>
-                <a href="/messages"> Messages </a>
+                <NavLink to="/messages" className={navData => navData.isActive ? s.active : s.item}> Messages </NavLink>
             </div>
             <div className={s.item}>
-                <a href="first-project/src/components/NavBar/NavBar#s"> Feed </a>
+                <NavLink to="/feed" className={navData => navData.isActive ? s.active : s.item}> Feed </NavLink>
             </div>
             <div className={s.item}>
-                <a href="first-project/src/components/NavBar/NavBar#s"> Community </a>
+                <NavLink to="/community" className={navData => navData.isActive ? s.active : s.item}> Community </NavLink>
             </div>
-            <div className={`${s.item} ${s.settings}`}>
-                <a href="first-project/src/components/NavBar/NavBar#s"> Settings </a>
+            <div className={`${s.item} ${s.settings}`} >
+                <NavLink to="/settings" className={navData => navData.isActive ? s.active : s.item}> Settings </NavLink>
             </div>
         </nav>
     );

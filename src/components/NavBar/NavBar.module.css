@@ -1,10 +1,15 @@
 .navBar {
     background-color: #fa4e4e;
     grid-area: nav;
-    padding-left: 25%;
+    padding-left: 30%;
     justify-items: center;
+    padding-top: 20px;
+
 }
 
+.item a.active{
+    color: #36e084;
+}
 
 .item a {
     color: white;
@@ -14,3 +19,4 @@
 .item.settings a {
     color: #000000;
 }
+
