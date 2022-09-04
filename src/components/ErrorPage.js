@@ -1,7 +1,9 @@
+import s from './ErrorPage.module.css'
+
 const ErrorPage = (props) => {
     return (
-        <div>
-            ERROR! PAGE NOT FOUND
+        <div className={s.error}>
+            <h1>ERROR! PAGE NOT FOUND</h1>
         </div>
     );
 }

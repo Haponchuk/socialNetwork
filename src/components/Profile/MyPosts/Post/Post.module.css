@@ -1,6 +1,9 @@
 .likes {
     color: #b04c8b;
 }
+.main {
+    color: rgba(255, 255, 255, 0.31);
+}
 
 .main img {
     width: 75px;
@@ -9,4 +12,10 @@
 }
 .span {
     color: black;
+}
+
+.postAva {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    padding-top: 10px;
 }

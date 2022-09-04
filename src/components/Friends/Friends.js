@@ -1,6 +1,7 @@
+import s from './Friends.module.css'
 const Friends = () => {
     return (
-        <div>
+        <div className={s.friends}>
             You have no friends.
         </div>
     );

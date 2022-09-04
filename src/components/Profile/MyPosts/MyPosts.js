@@ -6,8 +6,12 @@ const MyPosts = () => {
     return (
         <div className={s.appWrapper}>
             new-post
-            <textarea> </textarea>
-            <button> sent </button>
+            <div>
+                <textarea> </textarea>
+            </div>
+            <div>
+                <button> sent </button>
+            </div>
 
             <Post post='Hey everyone, that is my first try of working with props'  love= ' 21 ' hate = ' 3 '/>
             <Post post='Search for the keywords to learn more about each warning.' love=' 1 ' hate=' 15 '/>
