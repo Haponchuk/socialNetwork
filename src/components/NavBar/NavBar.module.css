@@ -1,5 +1,5 @@
 .navBar {
-    background-color: #fa4e4e;
+    background-color: #181818;
     grid-area: nav;
     padding-left: 30%;
     justify-items: center;
@@ -8,15 +8,15 @@
 }
 
 .item a.active{
-    color: #36e084;
+    color: #ffffff;
 }
 
 .item a {
-    color: white;
+    color: #999B9D;
     text-decoration: none;
 }
 
 .item.settings a {
-    color: #000000;
+    color: #b60000;
 }
 

@@ -1,3 +1,17 @@
-.content{
+.appWrapper{
+    display: grid;
+    grid-template-columns: 2fr 10fr;
+}
+.dialogs {
+    padding: 10px;
+}
+.dialogs .dialogItem {
+
+}
+
+.messages {
+    padding: 10px;
+}
+.messages .message {
 
 }

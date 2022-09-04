@@ -4,7 +4,7 @@ import Post from "./Post/Post";
 
 const MyPosts = () => {
     return (
-        <div className="new-post">
+        <div className={s.appWrapper}>
             new-post
             <textarea> </textarea>
             <button> sent </button>
