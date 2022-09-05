@@ -18,20 +18,37 @@ const MessageItem = (props) => {
 }
 
 const Messages = (props) => {
+
+    let dialogsData = [
+        {name: "Roma", id: 1},
+        {name: "Artem", id: 2},
+        {name: "Iqos", id: 3},
+        {name: "Eva", id: 4},
+        {name: "Zheton", id: 5}
+    ];
+
+    let messageData = [
+        {message: "Старіна, пора пити пиво."},
+        {message: "Яке ставлю пиво, у мене на баліку 20 грн."},
+        {message: "А чому я пишу сам до себе, це шиза?"},
+        {message: "Базару ноль."},
+        {message: "Коли я вже нарешті приїду в цю Венецію?!"}
+    ];
+
+
     return (
         <div className={s.appWrapper}>
             <div className={s.dialogs}>
-                <Dialog name="Roma" id="1" />
-                <Dialog name="Artem" id="2" />
-                <Dialog name="Iqos" id="3" />
-                <Dialog name="Eva" id="4" />
+                {
+                    dialogsData.map(el => <Dialog name = {el.name} id={el.id} /> )
+                }
             </div>
 
             <div className={s.messages}>
-                <MessageItem message="Старіна, пора пити пиво." />
-                <MessageItem message="Яке ставлю пиво, у мене на баліку 20 грн." />
-                <MessageItem message="А чому я пишу сам до себе, це шиза?" />
-                <MessageItem message="Базару ноль." />
+                {
+                    messageData.map(el => <MessageItem message = {el.message} />)
+                }
+
             </div>
 
         </div>
