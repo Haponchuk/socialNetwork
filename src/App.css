@@ -9,6 +9,10 @@
   "header header "
   "nav content ";
   background-color: #1E1E1E;
+  height: 100%;
+}
+#root{
+  height: 100vh;
 }
 
 .app-wrapper-content {

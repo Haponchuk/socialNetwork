@@ -1,12 +1,14 @@
-.appWrapper{
+.appWrapper {
     display: grid;
     grid-template-columns: 2fr 10fr;
 }
+
 .dialogs {
     padding: 10px;
 
 }
-.dialogItem  a{
+
+.dialogItem a {
     text-decoration: none;
     color: #999B9D;
 }
@@ -14,9 +16,11 @@
 .messages {
     padding: 10px;
 }
+
 .messages .message {
     color: #60605B;
 }
+
 .dialogItem a.active {
     color: white;
 }

@@ -4,14 +4,14 @@ import Header from './components/Header/Header'
 import NavBar from "./components/NavBar/NavBar";
 import Profile from "./components/Profile/Profile";
 import Messages from "./components/Messages/Messages";
-import ErrorPage from "./components/ErrorPage";
+import ErrorPage from "./components/ErrorPage/ErrorPage";
 import Friends from "./components/Friends/Friends";
 import Feed from "./components/Feed/Feed";
 import Community from "./components/Community/Community";
 import Settings from "./components/Settings/Settings";
 
 
-const App = () => {
+const App = (props) => {
     return (
         <Router>
             <div className="app-wrapper">
@@ -20,9 +20,9 @@ const App = () => {
                 <NavBar/>
                 <div className='app-wrapper-content'>
                     <Routes>
-                        <Route path="/profile" element={<Profile/>}/>
-                        <Route path="/" element={<Profile/>}/>
-                        <Route path="/messages/*" element={<Messages/>}/>
+                        <Route path="/profile" element={<Profile postData={props.postData}/>}/>
+                        <Route path="/" element={<Profile postData={props.postData}/>}/>
+                        <Route path="/messages/*" element={<Messages dialogsData={props.dialogsData} messageData={props.messageData}/>}/>
                         <Route path="/friends" element={<Friends/>}/>
                         <Route path="/feed" element={<Feed/>}/>
                         <Route path="/community" element={<Community/>}/>
