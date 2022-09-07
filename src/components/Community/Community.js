@@ -1,4 +1,4 @@
-const Community = () => {
+const Community = (props) => {
     return (
         <div>
 

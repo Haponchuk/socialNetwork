@@ -1,7 +1,7 @@
 import s from "./NavBar.module.css";
 import {NavLink} from "react-router-dom";
 
-const NavBar = () => {
+const NavBar = (props) => {
     return (
         <nav className={s.navBar}>
             <div className={s.item}>

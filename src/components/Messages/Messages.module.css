@@ -24,3 +24,10 @@
 .dialogItem a.active {
     color: white;
 }
+
+.dialogs img {
+    width: 40px;
+    height: 40px;
+    border-radius: 15px;
+    padding-right: 5px;
+}

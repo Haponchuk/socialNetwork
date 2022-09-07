@@ -8,13 +8,13 @@ const Messages = (props) => {
         <div className={s.appWrapper}>
             <div className={s.dialogs}>
                 {
-                    props.dialogsData.map(el => <DialogItem name={el.name} id={el.id}/>)
+                    props.state.dialogData.map(el => <DialogItem name={el.name} id={el.id} profilePic={el.profilePic}/>)
                 }
             </div>
 
             <div className={s.messages}>
                 {
-                    props.messageData.map(el => <MessageItem message={el.message}/>)
+                    props.state.messageData.map(el => <MessageItem message={el.message}/>)
                 }
             </div>
         </div>

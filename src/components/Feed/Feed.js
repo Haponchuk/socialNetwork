@@ -1,6 +1,6 @@
 import s from './Feed.module.css'
 
-const Feed = () => {
+const Feed = (props) => {
     return (
         <div className={s.feed}>
             No news today, Sir.

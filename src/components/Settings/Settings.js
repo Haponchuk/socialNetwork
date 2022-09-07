@@ -1,6 +1,4 @@
-
-
-const Settings = () => {
+const Settings = (props) => {
     return (
         <div>
 
