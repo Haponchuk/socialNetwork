@@ -1,6 +1,6 @@
 .appWrapper {
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 3fr 10fr;
 }
 
 .dialogs {
@@ -26,8 +26,8 @@
 }
 
 .dialogs img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 15px;
     padding-right: 5px;
 }
