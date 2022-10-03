@@ -1,29 +1,36 @@
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
-import React from "react";
+import React, {useCallback} from "react";
+import {useEffect, useState} from "react";
 
 
 
+const MyPosts = React.memo(
+    function MyPosts (props) {
 
-const MyPosts = (props) => {
+        let newPostElement = React.createRef();
 
-    let newPostElement = React.createRef();
+        let createNewPost = () => {
+            let text = newPostElement.current.value
+            props.addPost(text) ;
+        }
 
-
-    return (
-        <div className={s.appWrapper}>
-            new-post
-            <div>
-                <textarea ref={newPostElement}> </textarea>
+        return (
+            <div className={s.appWrapper}>
+                new-post
+                <div>
+                    <textarea ref={newPostElement}> </textarea>
+                </div>
+                <div>
+                    <button onClick={ () => createNewPost() }> post </button>
+                </div>
+                {
+                    props.postData.map(el => <Post post={el.postMessage} love={el.love} hate={el.hate}/>)
+                }
             </div>
-            <div>
-                <button onClick={() => {alert(newPostElement.current.value)}}>post</button>
-            </div>
-            {
-                props.postData.map(el => <Post post={el.postMessage} love={el.love} hate={el.hate}/>)
-            }
-        </div>
-    );
-}
+        );
+    }
+
+)
 
 export default MyPosts;

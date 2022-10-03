@@ -9,7 +9,7 @@
   "header header "
   "nav content ";
   background-color: #1E1E1E;
-  height: 100%;
+  height: 100vh;
 }
 #root{
   height: 100vh;
@@ -18,5 +18,7 @@
 .app-wrapper-content {
   background-color: #181818;
   grid-area: content;
+  height: 100%;
+  overflow: auto;
 }
 
